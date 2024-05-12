@@ -1,18 +1,11 @@
-## Getting Started
+What is Iterator:
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Iterator is a behavioral design pattern. The Iterator pattern provides a way to access elements of an aggregate object sequentially without exposing its underlying representation.
 
-## Folder Structure
+The iterator design pattern consists of several components like
+Iterator, ConcreateIterator, Aggregate and ConcreateAggregate.
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Applicability:
+To access an aggregate object's contents without exposing its internal representation.
+To support multiple traversals of aggregate objects.
+To provide a uniform interface for traversing different aggregate structures.
