@@ -18,7 +18,7 @@ public class HelperFacade {
                     break;
 
             case ORACLE:
-                con = MySqlHelper.getMySqlDBConnection();
+                con = OracleHelper.getOracleDBConnection();
                 OracleHelper oracleHelper = new OracleHelper();
                 switch(reportTypes){
                     case HTMLReport:
