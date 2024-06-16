@@ -1,18 +1,17 @@
-## Getting Started
+Composite is a structural design pattern that lets you compose objects into tree structures 
+and then work with these structures as if they were individual objects.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+ How to Implement
+Make sure that the core model of your app can be represented as a tree structure. Try to break it down into simple elements and containers. Remember that containers must be able to contain both simple elements and other containers.
 
-## Folder Structure
+Declare the component interface with a list of methods that make sense for both simple and complex components.
 
-The workspace contains two folders by default, where:
+Create a leaf class to represent simple elements. A program may have multiple different leaf classes.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Create a container class to represent complex elements. In this class, provide an array field for storing references to sub-elements. The array must be able to store both leaves and containers, so make sure it’s declared with the component interface type.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+While implementing the methods of the component interface, remember that a container is supposed to be delegating most of the work to sub-elements.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Finally, define the methods for adding and removal of child elements in the container.
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Keep in mind that these operations can be declared in the component interface. This would violate the Interface Segregation Principle because the methods will be empty in the leaf class. However, the client will be able to treat all the elements equally, even when composing the tree.

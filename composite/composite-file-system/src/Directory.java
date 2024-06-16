@@ -1,6 +1,9 @@
 import java.util.ArrayList;
 import java.util.List;
 
+
+//Create a container class to represent complex elements.
+
 public class Directory implements FileSystem{
 
     String directoryName;
