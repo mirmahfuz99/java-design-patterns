@@ -1,6 +1,6 @@
 What is Iterator:
 
-Iterator is a behavioral design pattern. The Iterator pattern provides a way to access elements of an aggregate object sequentially without exposing its underlying representation.
+Iterator is a behavioral design pattern. The Iterator pattern provides a way to access elements of an aggregate object sequentially without exposing its underlying representation (list, stack, tree, etc.).
 
 The iterator design pattern consists of several components like
 Iterator, ConcreateIterator, Aggregate and ConcreateAggregate.
