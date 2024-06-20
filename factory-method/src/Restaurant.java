@@ -5,6 +5,7 @@ public abstract class Restaurant {
         burger.prepare();
     }
 
+    //factory method
     public abstract Burger createBurger();
     
 }
