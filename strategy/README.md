@@ -6,3 +6,5 @@ Strategy design pattern is one of the behavioral design pattern. Strategy patter
 
 One of the best example of strategy pattern is Collections.sort() method that takes Comparator parameter. Based on the different implementations of Comparator interfaces, the Objects are getting sorted in different ways.
 
+
+Defines a family of algorithms, puts each of them in a seperate class, and makes their objects interchangeable.
